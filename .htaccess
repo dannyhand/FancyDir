@@ -1,8 +1,9 @@
 #Start FancyDir Config
-Options +Indexes
+SSILegacyExprParser on
+Options +Indexes +Includes
 
 IndexOptions +FancyIndexing +FoldersFirst +XHTML +HTMLTable +SuppressRules +IgnoreCase +SuppressHTMLPreamble +SuppressDescription
-IndexOptions +IconsAreLinks +IconHeight=16 +IconWidth=16 +NameWidth=*
+IndexOptions +IconsAreLinks +IconHeight=16 +IconWidth=16 +NameWidth=* +VersionSort
 
 IndexIgnore .htaccess /fancydir
 
@@ -18,30 +19,34 @@ DefaultIcon /fancydir/icons/page_white.png
 AddIcon /fancydir/icons/arrow_merge.png ..
 AddIcon /fancydir/icons/folder.png  ^^DIRECTORY^^
 AddIcon /fancydir/icons/blank.png ^^BLANKICON^^
-AddIcon /fancydir/icons/application.png .exe
+AddIcon /fancydir/icons/drive_go.png .exe .EXE .Exe
+AddIcon /fancydir/icons/package.png .bin .BIN .Bin
+AddIcon /fancydir/icons/comments.png .srt .subs .sub .idx .ssa .ass .SRT .SUBS .SUB .IDX .SSA .ASS .Srt .Subs .Sub .Idx .Ssa .Ass
+AddIcon /fancydir/icons/cd.png .iso .cia .3ds .nds .rom .bios .gba .gbc .gb .cue .ISO .CIA .3DS .ROM .BIOS .GBA .GBC .GB .CUE .Iso .Cia .3Ds .Nds .Rom .Bios .Gba .GBa .Gbc .GBc .Gb .Cue
 #code
-AddIcon /fancydir/icons/page_white_code.png .htm .html .shtm .shtml .css
-AddIcon /fancydir/icons/page_white_php.png .php
-AddIcon /fancydir/icons/page_white_visualstudio.png .sln .project .proj .asp .aspx .vb .vbx
-AddIcon /fancydir/icons/page_white_c.png .c
-AddIcon /fancydir/icons/page_white_csharp.png .cs
-AddIcon /fancydir/icons/page_white_cplusplus.png .cpp
-AddIcon /fancydir/icons/page_white_ruby.png .rb
-AddIcon /fancydir/icons/page_white_cup.png .java .class
-AddIcon /fancydir/icons/page_white_h.png .h
-AddIcon /fancydir/icons/page_white_code.png .py .pl 
+AddIcon /fancydir/icons/page_white_code.png .htm .html .shtm .shtml .css .xml .HTM .HTML .SHTM .SHTML .CSS .XML .Htm .Html .Shtm .Shtml .Css .Xml
+AddIcon /fancydir/icons/page_white_php.png .php .PHP .Php
+AddIcon /fancydir/icons/page_white_visualstudio.png .sln .project .proj .asp .aspx .vb .vbx .SLN .PROJECT .PROJ .ASP .ASPX .VB .VBX .Sln .Project .Asp .Aspx .Vb .VBx .Vbx
+AddIcon /fancydir/icons/page_white_c.png .c .C
+AddIcon /fancydir/icons/page_white_csharp.png .cs .CS .Cs
+AddIcon /fancydir/icons/page_white_cplusplus.png .cpp .CPP .Cpp .CPp
+AddIcon /fancydir/icons/page_white_ruby.png .rb .RB .Rb
+AddIcon /fancydir/icons/page_white_cup.png .java .class .jar .JAVA .CLASS .JAR .Java .Class .Jar
+AddIcon /fancydir/icons/page_white_h.png .h .H
+AddIcon /fancydir/icons/page_white_code.png .py .pl .PY .PL .Pl .Py .ps1 .PS1 .Ps1
 #office
-AddIcon /fancydir/icons/page_white_word.png .doc .docx
-AddIcon /fancydir/icons/page_white_excel.png .xls .xlsx
-AddIcon /fancydir/icons/page_white_powerpoint.png .ppt .pptx
-AddIcon /fancydir/icons/page_white_database.png .mdb
+AddIcon /fancydir/icons/page_white_word.png .doc .docx .DOC .DOCX .Doc .Docx
+AddIcon /fancydir/icons/page_white_excel.png .xls .xlsx .XLS .XLSX .Xls .Xlsx
+AddIcon /fancydir/icons/page_white_powerpoint.png .ppt .pptx .PPT .PPTX .Ppt .Pptx
+AddIcon /fancydir/icons/page_white_database.png .mdb .sql .db .MBD .SQL .DB .Mdb .Sql .db
  #adobe
-AddIcon /fancydir/icons/page_white_acrobat.png .pdf
-AddIcon /fancydir/icons/page_white_flash.png .fla .swf
-AddIcon /fancydir/icons/page_white_actionscript.png .as
+AddIcon /fancydir/icons/page_white_acrobat.png .pdf .PDF .Pdf .PDf .pDf .pdF .PdF
+AddIcon /fancydir/icons/page_white_flash.png .fla .swf .FLA .SWF .Fla .Swf
+AddIcon /fancydir/icons/page_white_actionscript.png .as .AS .As
 #other
-AddIcon /fancydir/icons/page_white_zip.png .zip .rar .7z .ace .tar .gz
-AddIcon /fancydir/icons/page_white_tux.png .sh .rpm .deb .ebuild
+AddIcon /fancydir/icons/package.png .zip .rar .7z .ace .tar .gz .ZIP .RAR .7Z .ACE .TAR .GZ .Zip .Rar .Ace .Tar .Gz
+AddIcon /fancydir/icons/page_white_tux.png .sh .rpm .deb .ebuild .SH .RPM .DEB .EBUILD .Sh .Rpm .Deb .Ebuild .EBuild
+AddIcon /fancydir/icons/book.png .epub .Epub .EPUB .EPub .CBZ .CBR .cbz .cbr .CBz .CBr .Cbz .Cbr
 #general
 AddIconByType /fancydir/icons/image.png image/*
 AddIconByType /fancydir/icons/sound.png audio/*
