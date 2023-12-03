@@ -12,25 +12,24 @@ Because it uses Apache's mod_autoindex, FancyDir <em>does not</em> rely on any a
 ## What does this fork add?
 * Adds capitalization variations for each extension.
 * Changes icons for several extensions.
-* Adds icons for
-** .bin .xml .sql .db
-** .srt .subs .sub .idx .ssa .ass
-** .iso .cia .3ds .nds .rom .bios .gba .gbc .gb .cue
-** .epub .cbz .cbr
-** .jar .ps1
+* Adds icons for:
+  - .bin .xml .sql .db .jar .ps1
+  - .srt .subs .sub .idx .ssa .ass
+  - .iso .cia .3ds .nds .rom .bios .gba .gbc .gb .cue
+  - .epub .cbz .cbr
 
-## All filetypes handled by this fork of FancyDir:
-* Code: .htm .html .shtm .shtml .css .xml .php .c .cs .cpp .rb .jar .java .class .h .py .pl .ps1 .sln .project .proj .asp .aspx .vb .vbx
-* Roms/Images: .iso .cia .3ds .nds .rom .bios .gba .gbc .gb .cue
-* Books: .epub .cbz .cbr
-* Office: .doc .docx .xls .xlsx .ppt .pptx
-* Databases: .mdb .sql .db
-* Adobe: .pdf .fla .swf .as
-* Archives: .zip .rar .7z .ace .tar .gz
-* Subtitles: .srt .subs .sub .idx .ssa .ass
-* Linux Stuff: .sh .rpm .deb .ebuild
-* .exe .bin
-* And wildcards for all image, audio, video, and text files handled by your Apache server.
+### All filetypes handled by this fork of FancyDir:
+* Code/Databases:
+  - .htm .html .shtm .shtml .css .xml .php .c .cs .cpp .rb .jar .java .class .h .py .pl .ps1 .sln .project .proj .asp .aspx .vb .vbx .mdb .sql .db
+* Archives/Executables/Roms/Images:
+  -  .zip .rar .7z .ace .tar .gz .exe .bin .iso .cia .3ds .nds .rom .bios .gba .gbc .gb .cue
+* Books/Office/Adobe:
+  - .epub .cbz .cbr .doc .docx .xls .xlsx .ppt .pptx .pdf .fla .swf .as
+* Subtitles:
+  - .srt .subs .sub .idx .ssa .ass
+* Linux Stuff:
+  - .sh .rpm .deb .ebuild
+* All image, audio, video, and text files handled by your Apache server.
 
 ## Updates
 * v2.1 (This fork) &mdash; 2023/12/03 &mdash; Added several file types to display icons. Added all of the other Silk icons, so you can customize more easily.
